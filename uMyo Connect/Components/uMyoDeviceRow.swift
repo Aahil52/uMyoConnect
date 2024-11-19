@@ -15,36 +15,12 @@ struct uMyoDeviceRow: View {
     var body: some View {
         VStack {
             HStack {
-                Text(formatTime(device.lastDataTime))
+                Text(device.id.uuidString)
                 
                 Spacer()
                 
                 Battery($device.batteryLevel)
                     .frame(width: 30)
-            }
-            
-            HStack {
-                Text("Data ID: \(device.lastDataID)")
-                
-                Spacer()
-            }
-            
-            HStack {
-                Text("Muscle Level: \(device.currentMuscleLevel)")
-                
-                Spacer()
-            }
-            
-            HStack {
-                Text("Spectrum: [\(device.currentSpectrum[0]), \(device.currentSpectrum[1]), \(device.currentSpectrum[2]), \(device.currentSpectrum[3])]")
-                
-                Spacer()
-            }
-            
-            HStack {
-                Text("Quaternion: [\(device.quaternion.w), \(device.quaternion.x), \(device.quaternion.y), \(device.quaternion.z)]")
-                
-                Spacer()
             }
         }
     }
