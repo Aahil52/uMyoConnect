@@ -14,6 +14,10 @@
 		D9B31FF72C8E3A7900EB91BF /* uMyo_ConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B31FF62C8E3A7900EB91BF /* uMyo_ConnectTests.swift */; };
 		D9B320012C8E3A7900EB91BF /* uMyo_ConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B320002C8E3A7900EB91BF /* uMyo_ConnectUITests.swift */; };
 		D9B320032C8E3A7900EB91BF /* uMyo_ConnectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B320022C8E3A7900EB91BF /* uMyo_ConnectUITestsLaunchTests.swift */; };
+		D9B320132C8E3B4900EB91BF /* uMyoDeviceRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B320122C8E3B4900EB91BF /* uMyoDeviceRow.swift */; };
+		D9B320182C8E404E00EB91BF /* uMyoBleSdk in Frameworks */ = {isa = PBXBuildFile; productRef = D9B320172C8E404E00EB91BF /* uMyoBleSdk */; };
+		D9B3201E2C8E410700EB91BF /* uMyoBleSdk in Frameworks */ = {isa = PBXBuildFile; productRef = D9B3201D2C8E410700EB91BF /* uMyoBleSdk */; };
+		D9B320212C8E494000EB91BF /* BatteryView in Frameworks */ = {isa = PBXBuildFile; productRef = D9B320202C8E494000EB91BF /* BatteryView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,7 @@
 		D9B31FFC2C8E3A7900EB91BF /* uMyo ConnectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "uMyo ConnectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9B320002C8E3A7900EB91BF /* uMyo_ConnectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uMyo_ConnectUITests.swift; sourceTree = "<group>"; };
 		D9B320022C8E3A7900EB91BF /* uMyo_ConnectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uMyo_ConnectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D9B320122C8E3B4900EB91BF /* uMyoDeviceRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uMyoDeviceRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +56,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9B320182C8E404E00EB91BF /* uMyoBleSdk in Frameworks */,
+				D9B320212C8E494000EB91BF /* BatteryView in Frameworks */,
+				D9B3201E2C8E410700EB91BF /* uMyoBleSdk in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				D9B31FE52C8E3A7500EB91BF /* uMyo_ConnectApp.swift */,
-				D9B31FE72C8E3A7500EB91BF /* ContentView.swift */,
+				D9B320152C8E3B9100EB91BF /* Views */,
+				D9B320142C8E3B8900EB91BF /* Components */,
 				D9B31FE92C8E3A7800EB91BF /* Assets.xcassets */,
 				D9B31FEB2C8E3A7800EB91BF /* Preview Content */,
 			);
@@ -127,6 +136,22 @@
 			path = "uMyo ConnectUITests";
 			sourceTree = "<group>";
 		};
+		D9B320142C8E3B8900EB91BF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D9B320122C8E3B4900EB91BF /* uMyoDeviceRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D9B320152C8E3B9100EB91BF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D9B31FE72C8E3A7500EB91BF /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +168,11 @@
 			dependencies = (
 			);
 			name = "uMyo Connect";
+			packageProductDependencies = (
+				D9B320172C8E404E00EB91BF /* uMyoBleSdk */,
+				D9B3201D2C8E410700EB91BF /* uMyoBleSdk */,
+				D9B320202C8E494000EB91BF /* BatteryView */,
+			);
 			productName = "uMyo Connect";
 			productReference = D9B31FE22C8E3A7500EB91BF /* uMyo Connect.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +245,10 @@
 				Base,
 			);
 			mainGroup = D9B31FD92C8E3A7500EB91BF;
+			packageReferences = (
+				D9B3201C2C8E410700EB91BF /* XCRemoteSwiftPackageReference "uMyoBleSdk" */,
+				D9B3201F2C8E494000EB91BF /* XCRemoteSwiftPackageReference "BatteryView" */,
+			);
 			productRefGroup = D9B31FE32C8E3A7500EB91BF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,6 +293,7 @@
 			files = (
 				D9B31FE82C8E3A7500EB91BF /* ContentView.swift in Sources */,
 				D9B31FE62C8E3A7500EB91BF /* uMyo_ConnectApp.swift in Sources */,
+				D9B320132C8E3B4900EB91BF /* uMyoDeviceRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +382,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -404,7 +439,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -425,6 +460,7 @@
 				DEVELOPMENT_TEAM = 8U58D834XF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This app uses Bluetooth to receive data from your uMyo Wearable EMG Sensors.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +490,7 @@
 				DEVELOPMENT_TEAM = 8U58D834XF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This app uses Bluetooth to receive data from your uMyo Wearable EMG Sensors.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -588,6 +625,42 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D9B3201C2C8E410700EB91BF /* XCRemoteSwiftPackageReference "uMyoBleSdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Aahil52/uMyoBleSdk";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		D9B3201F2C8E494000EB91BF /* XCRemoteSwiftPackageReference "BatteryView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/theMomax/BatteryView";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D9B320172C8E404E00EB91BF /* uMyoBleSdk */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = uMyoBleSdk;
+		};
+		D9B3201D2C8E410700EB91BF /* uMyoBleSdk */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D9B3201C2C8E410700EB91BF /* XCRemoteSwiftPackageReference "uMyoBleSdk" */;
+			productName = uMyoBleSdk;
+		};
+		D9B320202C8E494000EB91BF /* BatteryView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D9B3201F2C8E494000EB91BF /* XCRemoteSwiftPackageReference "BatteryView" */;
+			productName = BatteryView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D9B31FDA2C8E3A7500EB91BF /* Project object */;
 }

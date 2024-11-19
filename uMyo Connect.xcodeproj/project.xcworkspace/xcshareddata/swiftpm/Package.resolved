@@ -1,0 +1,24 @@
+{
+  "originHash" : "84603b101ad4d81af438e3ebbecbf51b72f12cdb85313f349b20053bab17d655",
+  "pins" : [
+    {
+      "identity" : "batteryview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/theMomax/BatteryView",
+      "state" : {
+        "branch" : "main",
+        "revision" : "a800142347e2fc5e344a547fb29b6d46c3dddcf1"
+      }
+    },
+    {
+      "identity" : "umyoblesdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Aahil52/uMyoBleSdk",
+      "state" : {
+        "branch" : "main",
+        "revision" : "4ac84081751b5e9e841cde2d1a7756f8cc1e10cd"
+      }
+    }
+  ],
+  "version" : 3
+}
