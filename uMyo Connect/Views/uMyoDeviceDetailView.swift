@@ -36,6 +36,11 @@ struct uMyoDeviceDetailView: View {
         List {
             Section {
                 HStack {
+                    Text("Status:")
+                    Spacer()
+                    Text(device.isConnected ? "Connected" : "Disconnected")
+                }
+                HStack {
                     Text("Battery:")
                     Spacer()
                     Text(String(Int(device.currentBatteryLevel * 100)) + "%")
@@ -56,6 +61,7 @@ struct uMyoDeviceDetailView: View {
                         Text("Stop Recording")
                     }
                 }
+                .disabled(!device.isConnected)
             }
             
             Section {
@@ -89,11 +95,11 @@ struct uMyoDeviceDetailView: View {
             }
             
             Section {
-                if !dataViewModel.data.isEmpty && !dataViewModel.isRecording {
+                if !dataViewModel.data.isEmpty && (!dataViewModel.isRecording || !device.isConnected) {
                     Button {
                         
                     } label: {
-                        Text("Save Recording")
+                        Text("Export Recording")
                     }
                 }
             }
