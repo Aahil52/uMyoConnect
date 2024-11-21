@@ -8,7 +8,7 @@
 import SwiftUI
 import uMyoBleSdk
 
-struct ContentView: View {
+struct uMyoDevicesView: View {
     @StateObject var umyo = uMyoDevicesManager()
     
     var body: some View {
@@ -22,7 +22,11 @@ struct ContentView: View {
                     } else {
                         List {
                             ForEach(umyo.devices) { device in
-                                uMyoDeviceRow(device: device)
+                                NavigationLink {
+                                    uMyoDeviceDetailView(device: device)
+                                } label: {
+                                    uMyoDeviceRow(device: device)
+                                }
                             }
                         }
                     }
@@ -49,5 +53,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    uMyoDevicesView()
 }

@@ -34,7 +34,7 @@ struct uMyoDeviceRow: View {
 
 struct uMyoDeviceRow_Previews: PreviewProvider {
     static var previews: some View {
-        let device = uMyoDevice(id: UUID(), currentDataTime: Date(), currentDataID: 1, currentBatteryLevel: 0.32, currentSpectrum: (sp0: 100, sp1: 111, sp2: 232, sp3: 232), currentMuscleLevel: 100, currentQuaternion: (w: 23, x: 231, y: 231, z: 232))
+        let device = uMyoDevice(id: UUID(), currentDataTime: Date(), currentDataID: 1, currentBatteryLevel: 0.32, currentSpectrum: Spectrum(sp0: 100, sp1: 111, sp2: 232, sp3: 232), currentMuscleLevel: 100, currentQuaternion: Quaternion(w: 23, x: 231, y: 231, z: 232))
         
         uMyoDeviceRow(device: device)
     }

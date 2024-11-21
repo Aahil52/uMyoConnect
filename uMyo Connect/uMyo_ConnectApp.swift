@@ -11,7 +11,7 @@ import SwiftUI
 struct uMyo_ConnectApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            uMyoDevicesView()
         }
     }
 }

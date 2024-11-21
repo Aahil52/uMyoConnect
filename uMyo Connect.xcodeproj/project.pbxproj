@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D9B31FE62C8E3A7500EB91BF /* uMyo_ConnectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B31FE52C8E3A7500EB91BF /* uMyo_ConnectApp.swift */; };
-		D9B31FE82C8E3A7500EB91BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B31FE72C8E3A7500EB91BF /* ContentView.swift */; };
+		D9B31FE82C8E3A7500EB91BF /* uMyoDevicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B31FE72C8E3A7500EB91BF /* uMyoDevicesView.swift */; };
 		D9B31FEA2C8E3A7800EB91BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9B31FE92C8E3A7800EB91BF /* Assets.xcassets */; };
 		D9B31FED2C8E3A7800EB91BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9B31FEC2C8E3A7800EB91BF /* Preview Assets.xcassets */; };
 		D9B31FF72C8E3A7900EB91BF /* uMyo_ConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B31FF62C8E3A7900EB91BF /* uMyo_ConnectTests.swift */; };
@@ -18,7 +18,9 @@
 		D9B320182C8E404E00EB91BF /* uMyoBleSdk in Frameworks */ = {isa = PBXBuildFile; productRef = D9B320172C8E404E00EB91BF /* uMyoBleSdk */; };
 		D9B3201E2C8E410700EB91BF /* uMyoBleSdk in Frameworks */ = {isa = PBXBuildFile; productRef = D9B3201D2C8E410700EB91BF /* uMyoBleSdk */; };
 		D9B320212C8E494000EB91BF /* BatteryView in Frameworks */ = {isa = PBXBuildFile; productRef = D9B320202C8E494000EB91BF /* BatteryView */; };
-		D9B320232CED022100EB91BF /* uMyoDeviceDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B320222CED022000EB91BF /* uMyoDeviceDataViewModel.swift */; };
+		D9B320232CED022100EB91BF /* uMyoDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B320222CED022000EB91BF /* uMyoDataViewModel.swift */; };
+		D9B3202B2CED3DE100EB91BF /* uMyoDeviceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B3202A2CED3DE100EB91BF /* uMyoDeviceDetailView.swift */; };
+		D9B3202D2CEEF13F00EB91BF /* SignalChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B3202C2CEEF13F00EB91BF /* SignalChart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +43,7 @@
 /* Begin PBXFileReference section */
 		D9B31FE22C8E3A7500EB91BF /* uMyo Connect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "uMyo Connect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9B31FE52C8E3A7500EB91BF /* uMyo_ConnectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uMyo_ConnectApp.swift; sourceTree = "<group>"; };
-		D9B31FE72C8E3A7500EB91BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D9B31FE72C8E3A7500EB91BF /* uMyoDevicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uMyoDevicesView.swift; sourceTree = "<group>"; };
 		D9B31FE92C8E3A7800EB91BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9B31FEC2C8E3A7800EB91BF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D9B31FF22C8E3A7900EB91BF /* uMyo ConnectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "uMyo ConnectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,7 +52,9 @@
 		D9B320002C8E3A7900EB91BF /* uMyo_ConnectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uMyo_ConnectUITests.swift; sourceTree = "<group>"; };
 		D9B320022C8E3A7900EB91BF /* uMyo_ConnectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uMyo_ConnectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D9B320122C8E3B4900EB91BF /* uMyoDeviceRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uMyoDeviceRow.swift; sourceTree = "<group>"; };
-		D9B320222CED022000EB91BF /* uMyoDeviceDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uMyoDeviceDataViewModel.swift; sourceTree = "<group>"; };
+		D9B320222CED022000EB91BF /* uMyoDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uMyoDataViewModel.swift; sourceTree = "<group>"; };
+		D9B3202A2CED3DE100EB91BF /* uMyoDeviceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uMyoDeviceDetailView.swift; sourceTree = "<group>"; };
+		D9B3202C2CEEF13F00EB91BF /* SignalChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalChart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				D9B320122C8E3B4900EB91BF /* uMyoDeviceRow.swift */,
+				D9B3202C2CEEF13F00EB91BF /* SignalChart.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -150,7 +155,8 @@
 		D9B320152C8E3B9100EB91BF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D9B31FE72C8E3A7500EB91BF /* ContentView.swift */,
+				D9B31FE72C8E3A7500EB91BF /* uMyoDevicesView.swift */,
+				D9B3202A2CED3DE100EB91BF /* uMyoDeviceDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -158,7 +164,7 @@
 		D9B320242CED022B00EB91BF /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				D9B320222CED022000EB91BF /* uMyoDeviceDataViewModel.swift */,
+				D9B320222CED022000EB91BF /* uMyoDataViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -302,10 +308,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9B320232CED022100EB91BF /* uMyoDeviceDataViewModel.swift in Sources */,
-				D9B31FE82C8E3A7500EB91BF /* ContentView.swift in Sources */,
+				D9B3202D2CEEF13F00EB91BF /* SignalChart.swift in Sources */,
+				D9B320232CED022100EB91BF /* uMyoDataViewModel.swift in Sources */,
+				D9B31FE82C8E3A7500EB91BF /* uMyoDevicesView.swift in Sources */,
 				D9B31FE62C8E3A7500EB91BF /* uMyo_ConnectApp.swift in Sources */,
 				D9B320132C8E3B4900EB91BF /* uMyoDeviceRow.swift in Sources */,
+				D9B3202B2CED3DE100EB91BF /* uMyoDeviceDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
